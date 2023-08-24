@@ -32,15 +32,13 @@
         }
 
         .vertical-line {
-            /* border-left: 2px solid #333; */
-
             height: 500px;
             margin: 0;
             width: 15px;
             display: flex;
-
             background-color: #000;
             padding: 0;
+            display: flex;
             justify-content: center;
             align-items: center;
             width: 1px;
@@ -60,8 +58,8 @@
         }
 
         .carddata {
-            margin-top: 15%;
-            padding: 2rem;
+            margin-top: 10%;
+            padding: 1rem;
         }
 
         .clientcard {
@@ -74,7 +72,7 @@
             /* margin: 2rem; */
             align-items: center;
             color: white;
-
+            border-radius: 1rem;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         }
 
@@ -106,6 +104,52 @@
             background: transparent;
             border: none;
         }
+           .ftbtn button :hover{
+           width: 50px;
+           height: 50px; 
+           /* position: absolute; */
+            border: none;
+            /* position: absolute; */
+        }
+        .clients{
+            background: linear-gradient(to bottom, rgba(147, 165, 120, 1) 0%, rgba(147, 165, 120, 1) 50%, rgba(232, 239, 218, 1) 50%,rgba(232, 239, 218, 1) 100%);
+        }
+
+        @media (max-width: 767px) {
+            .delivers {
+                padding: 2rem;
+            }
+            .vertical-line{
+                background-color: transparent;
+            }
+            .clients{
+                background:  rgba(232, 239, 218, 1);
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+         .card1{
+    margin-left: 3rem;
+         }
+        .clientcard{
+            background-color: rgba(45, 62, 18, 0.63);
+            color: white; 
+        }
+
+        }
+        @media (max-width: 973px){
+
+            .vertical-line{
+                background-color: transparent;
+            }
+            .clients{
+                /* background:  rgba(232, 239, 218, 1); */
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                margin-left:0.13rem ;
+            }
+        }
     </style>
 </head>
 
@@ -118,7 +162,7 @@
 
         <div class="delivers flex row  ">
 
-            <div class="col-4   p-4 m-2 flex text-center justify-content-center align-items-center">
+            <div class="col-4  col-lg-4  col-md-12 col-sm-12 p-4 m-2 flex row text-center justify-content-center align-content-center">
                 <h1 class="p-2">Why Are We
                     Amongst the Best?</h1>
                 <p class="p-2">
@@ -131,13 +175,13 @@
 
             </div>
 
-            <div class="vertical-line my-3 text-center ">
+            <div class="vertical-line  my-lg-4 text-center ">
 
             </div>
 
-            <div class="col-8  flex row justify-content-center ">
+            <div class="cartsbody col-8 col-lg-8  col-sm-12 col-md-12  flex row justify-content-center align-items-center ">
 
-                <div class="col-4 card1">
+                <div class="col-4   col-sm-12 col-md-4 card1 ">
                     <div class="divImg">
                         <img class="img1" src="./img/Group 71.png" alt="no img">
 
@@ -156,7 +200,7 @@
                 </div>
 
                 <!-- cart2 -->
-                <div class="col-4 card1">
+                <div class="col-4 col-sm-12 col-md-4 card1">
 
 
                     <div class="divImg">
@@ -176,7 +220,7 @@
                 </div>
                 <!-- cart3 -->
 
-                <div class="col-4 card1">
+                <div class="col-4 col-sm-12 col-md-4 card1">
                     <div class="divImg">
                         <img class="img1" src="./img/Group 70.png" alt="no img">
 
@@ -192,7 +236,8 @@
 
 
                 </div>
-                <div class="col-4 card1">
+                <!-- cart4 -->
+                <div class="col-4 card1 col-sm-12 col-md-4">
                     <div class="divImg">
                         <img class="img1" src="./img/Group 71.png" alt="no img">
 
@@ -215,13 +260,13 @@
 
 
 
-        <div class="delivers clientreviews col-12  my-5">
+        <div class="delivers clientreviews col-12  my-5 ">
 
 
             <div class="row">
 
 
-                <div class="col-3 ">
+                <div class="col-3 col-sm-12 col-md-12  col-lg-3">
                     <div class="p-3 m-2">
                         <h3>Testimonials </h3>
                         <h2>Our Client said </h2>
@@ -234,11 +279,10 @@
 
                 </div>
 
-                <div class="col-9 flex row  " style=" background: linear-gradient(to bottom, rgba(147, 165, 120, 1) 0%, rgba(147, 165, 120, 1) 50%, rgba(232, 239, 218, 1) 50%,rgba(232, 239, 218, 1) 100%);
-                 ">
+                <div class="col-9 col-sm-12 col-md-12 col-lg-9 flex row  clients " 
                     <!-- clien1 -->
 
-                    <div class="col-4 my-5">
+                    <div class="col-4 my-5  col-sm-12 col-md-4 col-lg-4">
 
                         <div class=" clientcard">
 
@@ -262,7 +306,7 @@
                     </div>
 
                     <!-- cleint2 -->
-                    <div class="col-4 my-5">
+                    <div class="col-4 my-5 col-sm-12 col-md-4 col-lg-4">
 
                         <div class=" clientcard">
 
@@ -286,7 +330,7 @@
                     </div>
 
                     <!-- client3 -->
-                    <div class="col-4 my-5">
+                    <div class="col-4 my-5 col-sm-12 col-md-4 col-lg-4">
 
                         <div class=" clientcard">
 
@@ -315,7 +359,7 @@
             <div class="row">
 
 
-                <div class="col-3 ">
+                <div class="col-3  col-sm-12 col-md-12 col-lg-3">
                     <div class="p-3 m-2">
                         <p>
                             Mega Marijuana Shop is committed to ensuring that your privacy and security is protected at
@@ -325,11 +369,10 @@
 
                 </div>
 
-                <div class="col-9 flex row  " style=" background: linear-gradient(to bottom, rgba(147, 165, 120, 1) 0%, rgba(147, 165, 120, 1) 50%, rgba(232, 239, 218, 1) 50%,rgba(232, 239, 218, 1) 100%);
-                 ">
+                <div class="col-9 flex row col-sm-12 col-md-12 col-lg-9 clients " 
                     <!-- clien4 -->
 
-                    <div class="col-4 my-5">
+                    <div class="col-4 my-5 col-sm-12 col-md-4 col-lg-4  ">
 
                         <div class=" clientcard">
 
@@ -353,7 +396,7 @@
                     </div>
 
                     <!-- cleint5 -->
-                    <div class="col-4 my-5">
+                    <div class="col-4 my-5 col-sm-12 col-md-4  col-lg-4">
 
                         <div class=" clientcard">
 
@@ -377,7 +420,7 @@
                     </div>
 
                     <!-- client6 -->
-                    <div class="col-4 my-5">
+                    <div class="col-4 my-5 col-sm-12 col-md-4 col-lg-4">
 
                         <div class=" clientcard">
 
